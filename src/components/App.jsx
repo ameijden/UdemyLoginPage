@@ -2,10 +2,13 @@ import React from "react";
 import Login from "./Login";
 
 var isLoggedIn = false;
+var userIsRegistered = true;
 
 function App() {
   return (
-    <div classname="container">{isLoggedIn ? <h1> Hello </h1> : <Login />}</div>
+    <div classname="container">
+      <Login isRegistered={userIsRegistered} />}
+    </div>
   );
 }
 
